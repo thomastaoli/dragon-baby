@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class=" g-resizer-v3-init"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Data behind Hong Kong's "Rice with two sides" craze</title>
+	<link rel="icon" href="logo.jpg">
+	<link rel="stylesheet" href="bulma.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<link href="css2" rel="stylesheet">
+
+  <style>
+    #g-plot-Artboard_1, #g-plot-Artboard_2, #g-plt4_svg-Artboard_1,#g-plt4_svg-Artboard_2 {
+      display: none;
+    }
+    @media (max-width: 650px) {
+      #g-plot-Artboard_2 {
+        display: block;
+      }
+      #g-plt4_svg-Artboard_2 {
+        display: block;
+      }
+      center {
+        display: none;
+      }
+    }
+    @media (max-width: 768px) {
+  .title, .subtitle {
+    font-size: smaller; /* Adjust font size */
+    padding: 5px; /* Add some padding */
+  }
+}
+    @media screen and (min-width: 650px)  {
+      #g-plot-Artboard_1 {
+        display: block;
+      }
+      #g-plt4_svg-Artboard_1 {
+        display: block;
+      }
+      center {
+        display: none;
+      }
+    }
+        .container {
+          max-width: 800px !important;
+          color: #000000;
+          font-family: Georgia;
+        }
+        img {
+          display: block;
+          width:1000px;
+          margin: 0 auto;
+          transition: 0.3s;
+        }
+
+        a {
+          color: deepskyblue;
+        }
+
+        p {
+          margin-bottom:1.5em;
+          font-size: 18px;
+          font-family: Georgia;
+          color: #000000;
+        }
+
+    .portrait {
+  float: left; /* Position the portrait to the left */
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make the portrait round */
+  margin-right: 15px; /* Add some space between the portrait and the text */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.byline, .date {
+  line-height: 80px; /* Adjust the line height to align with the height of the portrait */
+  margin: 0; /* Adjust margin as needed */
+}
+
+        .graph-title {
+          font-family: Arial;
+          font-weight: 600;
+          font-size: 24px;
+          color: #000000;
+      padding: auto;
+        }
+
+        .graph-subtitle {
+          font-family: Arial;
+          font-weight: 600;
+          font-size: 16px;
+      padding: auto;
+        }
+
+        h1.title {
+          /* Existing title styles */
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  font-weight: 800;
+  color: white;
+  text-decoration: underline;
+  max-width: 800px;
+  text-align: left; /* Ensure the text is left-aligned */
+  padding-left: 15px; /* Add some padding to the left */
+
+  /* Adding gray text shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h1.title span {
+          background-color: transparent;
+          padding: 0 1.2rem 0.6rem;
+          -webkit-box-decoration-break: clone;
+          -ms-box-decoration-break: clone;
+          -o-box-decoration-break: clone;
+          box-decoration-break: clone;
+        }
+
+        h2.subtitle {
+          color: white;
+          font-weight: bold;
+          font-size: 1.5rem;
+          padding-top: 40px; 
+        max-width: 1000px;
+        padding-left: 25px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h2.subtitle  span {
+          color: white;
+          padding: 0 1.3rem 0.3rem;
+          -webkit-box-decoration-break: clone;
+          -ms-box-decoration-break: clone;
+          -o-box-decoration-break: clone;
+          box-decoration-break: clone;
+        }
+
+        .header-caption {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  z-index: 2;
+}
+
+        .has-bg-img { 
+          background: url('header.jpg');
+          center center; 
+          background-size:cover; 
+        }
+
+        .hero {
+  position: relative; /* Added relative positioning */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: url('header.jpg') center center / cover no-repeat;
+}
+
+        .byline {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          font-size: 16px;
+        }
+
+        .bottomleft {
+          position: absolute;
+          bottom: 8px;
+          left: 16px;
+          font-size: 18px;
+          color: white;
+          
+          font-size: 12px;
+        }
+
+
+
+        .date {
+          font-size: 14px;
+          padding-top: 5px;
+          padding-bottom: 15px;
+
+        }
+
+        .row-container {
+          display: flex;
+          flex-direction: row;
+          max-width: 960px;
+          margin: 0 auto;
+          gap: 2em;
+        }
+        
+        .column-container {
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 1;
+        }
+        
+        @media (max-width: 800px) {
+          .row-container {
+            flex-direction: column;
+          }
+        }
+
+        @media (max-width: 768px) {
+  .hero {
+    min-height: 40vh; /* Adjusted height for mobile devices */
+  }
+
+  .header-caption {
+    right: 10px; /* Less offset from the right on smaller screens */
+    bottom: 5px; /* Less offset from the bottom to fit the smaller hero height */
+    font-size: 0.8rem;
+  }
+}
+
+    .video-background {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          min-width: 100%; 
+          min-height: 100%;
+          width: auto; 
+          height: auto;
+          z-index: -100; /* Ensure video stays in the background */
+          background-size: cover;
+        }
+
+    .content {
+  overflow: hidden; /* Clear the float */
+} 
+
+        .hero-body {
+          text-align: left; /* Center the text */
+          width: 100%;
+        }
+
+    </style>
+
+    </head>
+    <body>
+
+      <section class="hero has-bg-img"> 
+        <div class="hero-body"> 
+          <h1 class="title"><span>Why the Year of Dragon brings baby boom?</span></h1>
+          <h2 class="subtitle">While the long lasting superstition in many Chinese communities considers the coming new year as an auspicious time to be born, the subject becomes particularly critical now as many countries look to reverse their abysmal birth rates. However, the sudden increase in births is likely to overwhelm medical and educational resources.<span></span></h2>
+        </div>
+        <div class="header-caption">A father with his son in Singapore's Chinese New Year market. (Photo by The Ministry of Communications and Information) </div> <!-- Caption added here -->
+      </section>
+		  
+
+      <section class="section">
+        <div class="container">
+			<div class="content">
+				<img src="portrait.jpeg" class="portrait" alt="Thomas Li"> <!-- Add your portrait here -->
+				
+        <div class="byline"><b>By <a href="www.linkedin.com/in/thomas-tao-li">Thomas Li</a></b></div>
+				
+        <div class="date">Feb 18, 2024</div>
+            <p>The coming Chap Goh Mei this Saturday marks the end of the Chinese New Year celebration. However, this is just the start of the Year of the Dragon in the zodiac cycle. While dragon is the only mythical creature among the 12 and considered as the most auspicious, this year is also expected to bring a baby boom as many parents believe a “Dragon Baby” brings good fortune to the family.</p>
+            <p>“Many Chinese families consider a child born in the year of the dragon to be especially auspicious, the dragon being a symbol of power, strength, and good fortune,” said PM Lee Hsien Loong in his <a href="https://www.pmo.gov.sg/Newsroom/Chinese-New-Year-Message-2024-by-PM-Lee-Hsien-Loong#Chinese">Chinese New Year Message</a>. “So now is as good a time as any for young couples to add a 'little dragon' to your family.”</p>
+			      <p>This old but enduring superstition has had a profound impact on the demographics of many Chinese communities — not just in Greater China, but <a href="https://doi.org/10.2307/1973601">even across North America</a>. Many parents find that children in the Year of the Dragon already have to face more crowded pediatric clinics and more intense competition for admission to higher schools before they get the expected good luck.</p>
+			      <br>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/16834402" data-height="800px"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            <br>
+			      <p><b>Why the Year of Dragon brings baby boom?</b></p>
+            <p>Many people consider having a “Dragon Baby” as an old tradition. Indeed, Dragon is used as a symbol for the Chinese emperor, while many ordinary Chinese may sometimes refer to themselves as "descendants of the dragon". Accordingly, children born under this zodiac are believed to be blessed with good fortune and longevity.</p>
+            <p>However, zodiac birth timing is actually a modern-day phenomenon, according to a <a href="https://doi.org/10.1080/00324728.2020.1864458">NUS research</a>. The practice marks a shift of fertility culture in the Chinese community, from having as many sons as possible to considering childbearing as a conscious choice. This usually comes with government-pushed family planning programs, which was a common practice in many Asian countries during the late 20th century.</p>
+			      
+            <div class="flourish-embed flourish-chart" data-src="visualisation/16838502"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+            <p>While many Chinese parents are practicing the belief to “make their son becomes a dragon”, it's almost distined that their baby dragons are going to suffer from the larger cohort - even when government adjusted its policy measures. <a href="https://doi.org/10.1086/712476">A study</a> of dragon cohort in China found they have significantly higher scores in college entrance exams, compared to other students. </p> 
+            <p>“It a horrible idea to have your child born during the Year of Dragon,” commented by a Chinese social media user. “While it remains unknown your baby wil become a dragon, there is a high probability that he will become a 'chive' (in China, the slang refers to someone who can be repeatedly deceived and exploited due to fierce competition).”</p>
+            <p><b>Are people still willing to have “Dragon Babies” this year?</b></p>
+			      <p>Despite the fact it is still possible for people to have more children in the Year of the Dragon, this does not seem to be able to reverse the low fertility rates - which are among the lowest in the world - generally seen in the Chinese communities. Competition for higher education and worries about economic prospects have made many people more cautious about having children.</p>
+            
+            <div class="flourish-embed flourish-chart" data-src="visualisation/16838702"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            
+            <p>This is not what the government wants to see. The financial demands brought about by extremely low fertility rates and rapid aging will impose a huge burden on society. The Year of the Dragon has become a new excuse for many authorities to encourage people to have children.</p>
+		        <p>“I know that the decision is a very personal one. Each generation has different aspirations,” said PM Lee. “All this is quite understandable. But I still hope that more Singaporean couples will decide to have more children, and to have them earlier!”</p>
+            <p>Some even prepared before the CNY comes to town. In his latest <a href="https://www.policyaddress.gov.hk/2023/en/p113.html">Policy Address</a> released by the end of 2023, Hong Kong's Chief Executive John Lee announced that he will offer a one-off cash bonus of HKD 20,000 ($2557) to any newborn and provide priority access to housing for their families.</p>
+            <p>While government-led efforts to promote childbirth might work, it can also cause huge controversy. A huge debate was sparked in Malaysia during the past Valentine's Day after a politician <a href="https://www.facebook.com/SimTzeTzin.MP/posts/pfbid029vdq9DD6ziZNSbkDgWAuiEAWyKZVsjRs57wcaBuf2sJ48Smav8tTWW2PF41bbEyxl">asked</a> young Chinese people to get married and have children as soon as possible in the coming Year of Dragon to prevent Chinese schools from closing.</p>
+            <p>“It's easier said than done,” a user commented. “People don't get married for the sake of increasing the numbers.”</p>
+            <br>
+			      <img src="hospital.jpg" alt="Distribution of review scores">
+			      <p style="color: gray;"><i>Babies born on the first day of the Year of Dragon in Taichung, Taiwan. (Photo by Lee Women's Hospital)</i></p>
+		</div>	
+	
+	
+	<div class="container">
+		<div class="content">
+		<p><strong>Note:</strong></p>
+		<p>The Year of the Dragon is determined by the lunar calendar, which varies from the Gregorian calendar used for birth registrations in most countries. This may introduce slight discrepancies in the data for babies born around the lunar new year transition period.</p>
+		<p>You can view the code and all the data used on my <a href="https://github.com/thomastaoli/HK_rice_with_two_sides" target="_blank">Github</a>.</p>
+    </div>
+	</div>
+    
+  <hr>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <p>&copy; Thomas Li</p>
+    <a href="https://thomastaoli.github.io/portfolio.html">Back to my portfolio page</a>
+  </div>
+
+</body>
+</html>
